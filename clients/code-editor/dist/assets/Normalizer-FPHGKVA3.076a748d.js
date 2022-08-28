@@ -1,4 +1,4 @@
-import{W as a,C as l}from"./index.9bb609ec.js";function s(e){return e.charAt(0).toUpperCase()+e.slice(1).toLocaleLowerCase()}function h(e){let t=[];for(let[i,o]of Object.entries(e)){let n=s(i),r=l`@import url('https://fonts.googleapis.com/css2?family=${n}:wght@${o.join(";")}&display=swap')`;t.push(r)}return t}var p=a`
+import{W as a,C as l}from"./index.eb33405e.js";function s(e){return e.charAt(0).toUpperCase()+e.slice(1).toLocaleLowerCase()}function h(e){let t=[];for(let[i,o]of Object.entries(e)){let n=s(i),r=l`@import url('https://fonts.googleapis.com/css2?family=${n}:wght@${o.join(";")}&display=swap')`;t.push(r)}return t}var p=a`
 
       ${({theme:e})=>h(e.fonts)};
 
@@ -25,6 +25,7 @@ import{W as a,C as l}from"./index.9bb609ec.js";function s(e){return e.charAt(0).
             margin: 0;
             line-height: inherit;
             user-select: none;
+            overflow: hidden;
       }
 
       hr {

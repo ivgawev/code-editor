@@ -2,15 +2,15 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var a = require('styled-components');
+var l = require('styled-components');
 var jsxRuntime = require('react/jsx-runtime');
 var react = require('react');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
-var a__default = /*#__PURE__*/_interopDefaultLegacy(a);
+var l__default = /*#__PURE__*/_interopDefaultLegacy(l);
 
-var l=a__default["default"].button`
+var c=l__default["default"].button`
       padding-top: ${({theme:t})=>t.units[2]}rem;
       padding-bottom: ${({theme:t})=>t.units[2]}rem;
       padding-left: ${({theme:t})=>t.units[5]}rem;
@@ -23,7 +23,7 @@ var l=a__default["default"].button`
       border-width: 1;
       border-style: solid;
       border-color: ${({theme:t})=>t.colors.GREY[700]};
-`;var n=t=>jsxRuntime.jsx(e,{...t});n.defaultProps={as:"h1",variant:"primary"};var g=a__default["default"].input`
+`;var n=t=>jsxRuntime.jsx(e,{...t});n.defaultProps={as:"h1",variant:"primary"};var x=l__default["default"].input`
       padding-top: ${({theme:t})=>t.units[2]}rem;
       padding-bottom: ${({theme:t})=>t.units[2]}rem;
       padding-left: ${({theme:t})=>t.units[5]}rem;
@@ -48,29 +48,31 @@ var l=a__default["default"].button`
       :focus {
             border-color: ${({theme:t})=>t.colors.BLUE[500]};
       }
-`;var x=a__default["default"].main`
+`;var h=l__default["default"].main`
       display: flex;
       flex-direction: column;
       width: 100%;
       min-height: 100vh;
       background-color: ${({theme:t})=>t.palette.background};
-`;var e=a__default["default"](({as:t,children:r,...o})=>jsxRuntime.jsx(t??"p",{...o,children:r}))`
-      font-family: ${({theme:t,as:r})=>t.text.types[r].family};
-      font-weight: ${({theme:t,as:r})=>t.text.types[r].weight};
-      font-size: ${({theme:t,as:r})=>t.text.types[r].size}rem;
-      color: ${({theme:t,variant:r})=>t.text.variants[r]};
-      line-height: ${({theme:t,as:r})=>t.text.types[r].lineHeight}rem;
-      letter-spacing: ${({theme:t,as:r})=>t.text.types[r].letterSpacing}px;
-`;e.defaultProps={as:"p",variant:"primary"};var $=({size:t,children:r})=>{let[o,i]=react.Children.toArray(r);return jsxRuntime.jsxs(b,{children:[jsxRuntime.jsx(p,{weight:t.left,children:o}),jsxRuntime.jsx(p,{weight:t.right,children:i})]})},b=a__default["default"].section`
+`;var e=l__default["default"](({as:t,children:o,...r})=>jsxRuntime.jsx(t??"p",{...r,children:o}))`
+      font-family: ${({theme:t,as:o})=>t.text.types[o].family};
+      font-weight: ${({theme:t,as:o})=>t.text.types[o].weight};
+      font-size: ${({theme:t,as:o})=>t.text.types[o].size}rem;
+      color: ${({theme:t,variant:o})=>t.text.variants[o]};
+      line-height: ${({theme:t,as:o})=>t.text.types[o].lineHeight}rem;
+      letter-spacing: ${({theme:t,as:o})=>t.text.types[o].letterSpacing}px;
+`;e.defaultProps={as:"p",variant:"primary"};var a=({size:t,children:o,...r})=>{let[i,m]=react.Children.toArray(o);return jsxRuntime.jsxs(b,{children:[jsxRuntime.jsx(p,{weight:t.left,...r,children:i}),jsxRuntime.jsx(p,{weight:t.right,...r,children:m})]})},b=l__default["default"].section`
       display: flex;
-`,p=a__default["default"].div`
+      flex-direction: column;
+`,p=l__default["default"].div`
       flex: ${({weight:t})=>t};
-`;
+      flex-direction: ${({direction:t})=>t};
+`;a.defaultProps={direction:"row"};
 
-exports.Button = l;
+exports.Button = c;
 exports.Heading = n;
-exports.Input = g;
-exports.Page = x;
-exports.Split = $;
+exports.Input = x;
+exports.Page = h;
+exports.Split = a;
 exports.Text = e;
 //# sourceMappingURL=index.js.map

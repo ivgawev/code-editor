@@ -1,8 +1,8 @@
-import a from 'styled-components';
+import l from 'styled-components';
 import { jsx, jsxs } from 'react/jsx-runtime';
 import { Children } from 'react';
 
-var l=a.button`
+var c=l.button`
       padding-top: ${({theme:t})=>t.units[2]}rem;
       padding-bottom: ${({theme:t})=>t.units[2]}rem;
       padding-left: ${({theme:t})=>t.units[5]}rem;
@@ -15,7 +15,7 @@ var l=a.button`
       border-width: 1;
       border-style: solid;
       border-color: ${({theme:t})=>t.colors.GREY[700]};
-`;var n=t=>jsx(e,{...t});n.defaultProps={as:"h1",variant:"primary"};var g=a.input`
+`;var n=t=>jsx(e,{...t});n.defaultProps={as:"h1",variant:"primary"};var x=l.input`
       padding-top: ${({theme:t})=>t.units[2]}rem;
       padding-bottom: ${({theme:t})=>t.units[2]}rem;
       padding-left: ${({theme:t})=>t.units[5]}rem;
@@ -40,24 +40,26 @@ var l=a.button`
       :focus {
             border-color: ${({theme:t})=>t.colors.BLUE[500]};
       }
-`;var x=a.main`
+`;var h=l.main`
       display: flex;
       flex-direction: column;
       width: 100%;
       min-height: 100vh;
       background-color: ${({theme:t})=>t.palette.background};
-`;var e=a(({as:t,children:r,...o})=>jsx(t??"p",{...o,children:r}))`
-      font-family: ${({theme:t,as:r})=>t.text.types[r].family};
-      font-weight: ${({theme:t,as:r})=>t.text.types[r].weight};
-      font-size: ${({theme:t,as:r})=>t.text.types[r].size}rem;
-      color: ${({theme:t,variant:r})=>t.text.variants[r]};
-      line-height: ${({theme:t,as:r})=>t.text.types[r].lineHeight}rem;
-      letter-spacing: ${({theme:t,as:r})=>t.text.types[r].letterSpacing}px;
-`;e.defaultProps={as:"p",variant:"primary"};var $=({size:t,children:r})=>{let[o,i]=Children.toArray(r);return jsxs(b,{children:[jsx(p,{weight:t.left,children:o}),jsx(p,{weight:t.right,children:i})]})},b=a.section`
+`;var e=l(({as:t,children:o,...r})=>jsx(t??"p",{...r,children:o}))`
+      font-family: ${({theme:t,as:o})=>t.text.types[o].family};
+      font-weight: ${({theme:t,as:o})=>t.text.types[o].weight};
+      font-size: ${({theme:t,as:o})=>t.text.types[o].size}rem;
+      color: ${({theme:t,variant:o})=>t.text.variants[o]};
+      line-height: ${({theme:t,as:o})=>t.text.types[o].lineHeight}rem;
+      letter-spacing: ${({theme:t,as:o})=>t.text.types[o].letterSpacing}px;
+`;e.defaultProps={as:"p",variant:"primary"};var a=({size:t,children:o,...r})=>{let[i,m]=Children.toArray(o);return jsxs(b,{children:[jsx(p,{weight:t.left,...r,children:i}),jsx(p,{weight:t.right,...r,children:m})]})},b=l.section`
       display: flex;
-`,p=a.div`
+      flex-direction: column;
+`,p=l.div`
       flex: ${({weight:t})=>t};
-`;
+      flex-direction: ${({direction:t})=>t};
+`;a.defaultProps={direction:"row"};
 
-export { l as Button, n as Heading, g as Input, x as Page, $ as Split, e as Text };
+export { c as Button, n as Heading, x as Input, h as Page, a as Split, e as Text };
 //# sourceMappingURL=index.mjs.map

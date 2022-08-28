@@ -1,12 +1,12 @@
 import { b } from './chunk-4RXLWVGV.mjs';
 import { createGlobalStyle, css } from 'styled-components';
 
-function o(t){let e=[];for(let[n,r]of Object.entries(t)){let a=b(n),s=css`@import url('https://fonts.googleapis.com/css2?family=${a}:wght@${r.join(";")}&display=swap')`;e.push(s);}return e}var g=createGlobalStyle`
+function o(e){let t=[];for(let[n,r]of Object.entries(e)){let a=b(n),l=css`@import url('https://fonts.googleapis.com/css2?family=${a}:wght@${r.join(";")}&display=swap')`;t.push(l);}return t}var g=createGlobalStyle`
 
-      ${({theme:t})=>o(t.fonts)};
+      ${({theme:e})=>o(e.fonts)};
 
       * {
-            font-family: ${({theme:t})=>`"${t.text.defaultFont}"`};
+            font-family: ${({theme:e})=>`"${e.text.defaultFont}"`};
       }
 
       *,
@@ -28,6 +28,7 @@ function o(t){let e=[];for(let[n,r]of Object.entries(t)){let a=b(n),s=css`@impor
             margin: 0;
             line-height: inherit;
             user-select: none;
+            overflow: hidden;
       }
 
       hr {
@@ -227,4 +228,4 @@ function o(t){let e=[];for(let[n,r]of Object.entries(t)){let a=b(n),s=css`@impor
 `;
 
 export { g as default };
-//# sourceMappingURL=Normalizer-WR2FCEJ7.mjs.map
+//# sourceMappingURL=Normalizer-FPHGKVA3.mjs.map

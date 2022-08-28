@@ -24,6 +24,7 @@ declare const Input: styled_components.StyledComponent<"input", styled_component
 declare const Page: styled_components.StyledComponent<"main", styled_components.DefaultTheme, {}, never>;
 
 interface Props extends PropsWithChildren {
+    direction?: 'row' | 'column';
     size: {
         left: number;
         right: number;
