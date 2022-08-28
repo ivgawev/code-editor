@@ -1,1 +1,1 @@
-export { PathsContextProvider } from '#/providers/PathsContext.provider';
+export { PathsProvider } from '#/providers/Paths.provider';

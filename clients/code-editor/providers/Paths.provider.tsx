@@ -2,7 +2,7 @@ import { FC, PropsWithChildren, useCallback, useMemo, useState } from 'react';
 import { PathsContext } from '#/contexts/paths.context';
 import { convertPathsToTree } from '@shared/helpers';
 
-const PathsContextProvider: FC<PropsWithChildren> = ({ children }) => {
+const PathsProvider: FC<PropsWithChildren> = ({ children }) => {
       const [paths, setPaths] = useState<string[]>([]);
 
       const addPath = useCallback((path: string) => {
@@ -25,4 +25,4 @@ const PathsContextProvider: FC<PropsWithChildren> = ({ children }) => {
       );
 };
 
-export { PathsContextProvider };
+export { PathsProvider };

@@ -1,25 +1,18 @@
 import { usePathsContext } from '#/hooks';
 import { useRenderFileExplorer } from '#/modules/file-explorer/hooks';
-import { useMemo, useState } from 'react';
-import { SelectedFileExplorerItemContext } from '#/modules/file-explorer/contexts';
 import { Wrapper } from '#/modules/file-explorer/components';
 import { Tree } from '@react/core';
+import { SelectedFileExplorerItemProvider } from '#/modules/file-explorer/providers';
 
 const FileExplorer = () => {
       const { pathsTree } = usePathsContext();
       const { render } = useRenderFileExplorer();
-      const [selected, setSelected] = useState('');
-
-      const contextValue = useMemo(() => ({
-            selected,
-            setSelected
-      }), [selected]);
 
       return (
             <Wrapper>
-                  <SelectedFileExplorerItemContext.Provider value={contextValue}>
+                  <SelectedFileExplorerItemProvider>
                         <Tree<any> tree={pathsTree} render={render} />
-                  </SelectedFileExplorerItemContext.Provider>
+                  </SelectedFileExplorerItemProvider>
             </Wrapper>
       );
 };
