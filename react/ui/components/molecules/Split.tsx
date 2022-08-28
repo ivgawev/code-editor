@@ -9,6 +9,7 @@ interface Props extends PropsWithChildren {
       }
 }
 
+// This component was used before, but I decided to go to another styling approach
 const Split: FC<Props> = ({ size, children, ...rest }) => {
       const [left, right] = Children.toArray(children);
 
