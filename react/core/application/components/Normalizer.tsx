@@ -28,6 +28,7 @@ const Normalizer = createGlobalStyle`
             margin: 0;
             line-height: inherit;
             user-select: none;
+            overflow: hidden;
       }
 
       hr {
