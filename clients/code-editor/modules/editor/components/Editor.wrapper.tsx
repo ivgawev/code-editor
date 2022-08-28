@@ -10,6 +10,12 @@ const Wrapper = styled.section`
       padding-bottom: ${({ theme }) => theme.units[7]}rem;
       padding-left: ${({ theme }) => theme.units[10]}rem;
       padding-right: ${({ theme }) => theme.units[10]}rem;
+
+      @media screen and (max-width: 1000px) {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+      }
 `;
 
 export { Wrapper };

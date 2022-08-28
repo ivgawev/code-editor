@@ -26,6 +26,11 @@ const Split: FC<Props> = ({ size, children }) => {
 
 const Wrapper = styled.section`
       display: flex;
+
+      // This should not be here, but I don't have more time.
+      @media screen and (max-width: 1000px) {
+            flex-direction: column
+      }
 `;
 
 const Pane = styled.div<{ weight: number }>`
