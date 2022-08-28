@@ -1,11 +1,11 @@
-import { usePathsContext } from '#/hooks';
+import { usePaths } from '#/hooks';
 import { useRenderFileExplorer } from '#/modules/file-explorer/hooks';
 import { Wrapper } from '#/modules/file-explorer/components';
 import { Tree } from '@react/core';
 import { SelectedFileExplorerItemProvider } from '#/modules/file-explorer/providers';
 
 const FileExplorer = () => {
-      const { pathsTree } = usePathsContext();
+      const { pathsTree } = usePaths();
       const { render } = useRenderFileExplorer();
 
       return (

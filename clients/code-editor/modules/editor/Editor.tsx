@@ -1,11 +1,11 @@
-import { usePathsContext } from '#/hooks';
+import { usePaths } from '#/hooks';
 import { Wrapper } from '#/modules/editor/components';
 import { Button, Input } from '@react/ui';
 import { useEffect, useRef } from 'react';
 import { sanitizePath } from '@shared/helpers';
 
 const Editor = () => {
-      const { addPath } = usePathsContext();
+      const { addPath } = usePaths();
       const inputRef = useRef<HTMLInputElement>(null);
 
       const handleOnClick = () => {

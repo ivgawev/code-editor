@@ -1,1 +1,1 @@
-export { usePathsContext } from '#/hooks/use-paths-context.hook';
+export { usePaths } from '#/hooks/use-paths-context.hook';
