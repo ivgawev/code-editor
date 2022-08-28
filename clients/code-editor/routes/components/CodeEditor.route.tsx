@@ -1,4 +1,4 @@
-import { Page, Split } from '@react/ui';
+import { Page } from '@react/ui';
 import { Editor, FileExplorer, TopMenu } from '#/modules';
 import { PathsContextProvider } from '#/providers';
 
@@ -8,10 +8,8 @@ const CodeEditorRoute = () => {
                   <TopMenu />
 
                   <PathsContextProvider>
-                        <Split size={{ left: 1, right: 3 }}>
-                              <FileExplorer />
-                              <Editor />
-                        </Split>
+                        <FileExplorer />
+                        <Editor />
                   </PathsContextProvider>
             </Page>
       );
