@@ -1,0 +1,15 @@
+{
+      "extends": "@configurations/tsconfig/tsconfig.web.json",
+
+      "compilerOptions": {
+            "baseUrl": ".",
+            "paths": {
+                  "#/*": ["*"]
+            },
+
+            "types": ["node"]
+      },
+
+      "include": ["**/*.ts", "**/*.tsx", "**/*.d.ts"],
+      "exclude": ["node_modules"]
+}

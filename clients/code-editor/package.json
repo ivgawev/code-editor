@@ -1,0 +1,45 @@
+{
+      "name": "@clients/code-editor",
+      "version": "1.0.0",
+      "scripts": {
+            "build": "vite build",
+            "dev": "vite"
+      },
+      "dependencies": {
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-icons": "^4.4.0",
+            "styled-components": "^5.3.5"
+      },
+      "devDependencies": {
+            "@configurations/eslint": "*",
+            "@configurations/tsconfig": "*",
+            "@react/core": "*",
+            "@react/ui": "*",
+            "@shared/design-system": "*",
+            "@shared/helpers": "*",
+            "@storybook/addon-actions": "^6.5.10",
+            "@storybook/addon-essentials": "^6.5.10",
+            "@storybook/addon-links": "^6.5.10",
+            "@storybook/builder-webpack5": "^6.5.10",
+            "@storybook/manager-webpack5": "^6.5.10",
+            "@storybook/react": "^6.5.10",
+            "@types/node": "^18.7.13",
+            "@types/react": "^18.0.17",
+            "@types/react-dom": "^18.0.6",
+            "@types/styled-components": "^5.1.26",
+            "@typescript-eslint/eslint-plugin": "^5.35.1",
+            "@vitejs/plugin-react": "^2.0.1",
+            "eslint": "^8.23.0",
+            "eslint-config-standard-with-typescript": "^21.0.1",
+            "eslint-plugin-import": "^2.26.0",
+            "eslint-plugin-node": "^11.1.0",
+            "eslint-plugin-promise": "^6.0.1",
+            "eslint-plugin-react": "^7.31.1",
+            "eslint-plugin-react-hooks": "^4.6.0",
+            "typescript": "^4.8.2",
+            "vite": "^3.0.9",
+            "vite-tsconfig-paths": "^3.5.0",
+            "web-vitals": "^3.0.0"
+      }
+}

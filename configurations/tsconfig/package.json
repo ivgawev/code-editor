@@ -1,0 +1,10 @@
+{
+      "name": "@configurations/tsconfig",
+      "version": "1.0.0",
+      "files": [
+            "tsconfig.base.json",
+            "tsconfig.node.json",
+            "tsconfig.react.json",
+            "tsconfig.web.json"
+      ]
+}

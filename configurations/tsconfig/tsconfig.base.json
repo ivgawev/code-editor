@@ -1,0 +1,17 @@
+{
+      "$schema": "https://json.schemastore.org/tsconfig",
+
+      "compilerOptions": {
+            "target": "ESNext",
+
+            "module": "ESNext",
+            "moduleResolution": "Node",
+            "esModuleInterop": true,
+
+            "allowJs": false,
+            "forceConsistentCasingInFileNames": true,
+            "strictNullChecks": true
+      },
+
+      "exclude": ["node_modules"]
+}

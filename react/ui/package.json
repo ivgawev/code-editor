@@ -1,0 +1,46 @@
+{
+      "name": "@react/ui",
+      "version": "1.0.0",
+      "scripts": {
+            "build": "tsup",
+            "dev": "yarn build --watch",
+            "storybook": "start-storybook -p 6006"
+      },
+      "dependencies": {
+            "react": "^18.2.0",
+            "react-dom": "^18.2.0",
+            "react-icons": "^4.4.0",
+            "styled-components": "^5.3.5"
+      },
+      "devDependencies": {
+            "@configurations/eslint": "*",
+            "@configurations/tsconfig": "*",
+            "@shared/design-system": "*",
+            "@storybook/addon-actions": "^6.5.10",
+            "@storybook/addon-essentials": "^6.5.10",
+            "@storybook/addon-links": "^6.5.10",
+            "@storybook/builder-webpack5": "^6.5.10",
+            "@storybook/manager-webpack5": "^6.5.10",
+            "@storybook/react": "^6.5.10",
+            "@types/node": "^18.7.13",
+            "@types/react": "^18.0.17",
+            "@types/react-dom": "^18.0.6",
+            "@types/styled-components": "^5.1.26",
+            "@typescript-eslint/eslint-plugin": "^5.35.1",
+            "eslint": "^8.23.0",
+            "eslint-config-standard-with-typescript": "^21.0.1",
+            "eslint-plugin-import": "^2.26.0",
+            "eslint-plugin-node": "^11.1.0",
+            "eslint-plugin-promise": "^6.0.1",
+            "eslint-plugin-react": "^7.31.1",
+            "eslint-plugin-react-hooks": "^4.6.0",
+            "tsup": "^6.2.3",
+            "typescript": "^4.8.2"
+      },
+      "main": "./dist/index.js",
+      "types": "./dist/index.d.ts",
+      "module": "./dist/index.mjs",
+      "files": [
+            "dist/**"
+      ]
+}

@@ -1,0 +1,22 @@
+{
+      "name": "@configurations/eslint",
+      "version": "1.0.0",
+      "devDependencies": {
+            "@typescript-eslint/eslint-plugin": "^5.35.1",
+            "eslint": "^8.23.0",
+            "eslint-config-standard-with-typescript": "^21.0.1",
+            "eslint-plugin-import": "^2.26.0",
+            "eslint-plugin-node": "^11.1.0",
+            "eslint-plugin-promise": "^6.0.1",
+            "eslint-plugin-react": "^7.31.1",
+            "eslint-plugin-react-hooks": "^4.6.0",
+            "typescript": "^4.8.2"
+      },
+      "files": [
+            "eslint.base.js",
+            "eslint.node.js",
+            "eslint.react.js",
+            "eslint.typescript.js",
+            "eslint.web.js"
+      ]
+}

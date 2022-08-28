@@ -1,0 +1,35 @@
+[
+      {
+            "id": "src",
+            "level": 1,
+            "children": [
+                  {
+                        "id": "src/components",
+                        "level": 2,
+                        "children": [
+                              {
+                                    "id": "src/components/index.ts",
+                                    "level": 3,
+                                    "children": []
+                              }
+                        ]
+                  },
+                  {
+                        "id": "src/utils",
+                        "level": 2,
+                        "children": []
+                  }
+            ]
+      },
+      {
+            "id": "dev",
+            "level": 1,
+            "children": [
+                  {
+                        "id": "dev/file.js",
+                        "level": 2,
+                        "children": []
+                  }
+            ]
+      }
+]

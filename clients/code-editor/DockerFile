@@ -1,0 +1,20 @@
+FROM node:alpine AS builder
+
+WORKDIR /app
+RUN yarn global add turbo
+COPY . .
+
+
+FROM node:alpine AS installer
+
+RUN apk update
+WORKDIR /app
+COPY --from=builder /app/out/json/ .
+COPY --from=builder /app/out/yarn.lock ./yarn.lock
+COPY turbo.json turbo.json
+RUN yarn install
+
+
+FROM node:alpine AS runner
+
+WORKDIR /app
