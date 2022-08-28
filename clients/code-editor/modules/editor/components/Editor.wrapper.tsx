@@ -1,3 +1,4 @@
+import { Input } from '@react/ui';
 import styled from 'styled-components';
 
 const Wrapper = styled.section`
@@ -15,6 +16,10 @@ const Wrapper = styled.section`
             position: fixed;
             bottom: 0;
             width: 100%;
+
+            ${Input} {
+                  font-size: ${({ theme }) => theme.units[3]}rem;
+            }
       }
 `;
 
