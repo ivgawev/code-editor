@@ -11,7 +11,10 @@ Once this has been completed, run:
 yarn dev
 ```
 
-If this command fails for any cause, please close the console and try again:
+To create a file/folder you have to add a path. For example:
 ```sh
-yarn dev
+- src/components/index.ts
+- src/components/Component/Component/.tsx
+- public/index.html
+- folder
 ```
